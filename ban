@@ -1,0 +1,150 @@
+--------------------------ss屏蔽地址-------------------------
+
+---屏蔽360---
+iptables -A OUTPUT -m string --string "360safe.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "www.360safe.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "360safe.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "360.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "360.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "so.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "360.net" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "hao.360.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "www.hao123.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "hao123.com" --algo bm -j DROP
+---
+iptables -A OUTPUT -m string --string "gov.cn" --algo bm -j DROP
+---
+
+---屏蔽qq，猎豹家族之类的---
+iptables -A OUTPUT -m string --string "dldir2.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dldir1.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dl_dir.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dl_dir2.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dldir3.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dl.ijinshan.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "toolbar.soso.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "www.so.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "cnrdn.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "cd001.www.duba.net" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "duba.net" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dl.liebao.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "dl.cm.ksmobile.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "liebao.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "user.qzone.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "qzone.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "guanjia.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "daohang.qq.com" --algo bm -j DROP
+---
+
+---屏蔽uc---
+iptables -A OUTPUT -m string --string "uc.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "uc.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "www.uc123.com" --algo bm -j DROP
+---
+
+---屏蔽百度地图，高德地图---
+iptables -A OUTPUT -m string --string "anquan.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "api.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "ps.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "sv.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "u.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "offnavi.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "newvector.map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "ulog.imap.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "imap.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "map.baidu.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "newloc.map.n.shifen.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "sync.amap.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "amap.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "nbsdk-baichuan.alicdn.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "m5.amap.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "uczzd.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "uczzd.com.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "uczzd.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "ucweb.cn" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "ucweb.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "tools.3g.qq.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "umeng.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "mmstat.com" --algo bm -j DROP
+---
+
+---嘻嘻嘻？---
+iptables -A OUTPUT -m string --string "t66y.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "avgle.com" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "7mm.tv" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "javfun.me" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "watch8x" --algo bm -j DROP
+iptables -A OUTPUT -m string --string "thz.tw" --algo bm -j DROP
+
+
+
+
+
+
+
+
+
+--------------------------路由器屏蔽地址-------------------------
+sublimetext.com
+sublimehq.com
+221.179.46.194
+yximgs.com
+360.cn
+360.com
+gov.cn
+douyin.com
+snssdk.com
+toutiao.com
+v.kandian.qq.com
+gifshow.com
+amemv.com
+www.toutiao.com
+pstatp.com
+v.weishi.qq.com
+360safe.com
+daohang.qq.com
+hao.360.cn
+www.hao123.com
+anquan.baidu.com
+duba.net
+so.com
+360.net
+soso.com
+g3.letv.com
+doubleclick.net
+scloud.letv.com
+tunion-api.m.taobao.com
+wgo.mmstat.com
+mapi.m.jd.com
+android.rqd.qq.com
+d3g.qq.com
+weishi.qq.com
+tools.3g.qq.com
+uczzd.cn
+nbsdk-baichuan.alicdn.com
+ucweb.cn
+ixigua.com
+ixiguavideo.com
+guanjia.qq.com
+dl.ijinshan.com
+www.uc123.com
+hao.360.com
+hao123.com
+dl.liebao.cn
+ksmobile.com
+uc.com
+uc.cn
+ads.google.com
+leyingtt.com
+googleads.g.doubleclick.net
+umeng.com
+mmstat.com
+dm.toutiao.com
+ribaoapi.com
+pingma.qq.com
+mazu.3g.qq.com
+xp.qpic.cn
+ucweb.com
+uczzd.com.cn
+uczzd.com
+360safe.cn
