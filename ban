@@ -148,3 +148,35 @@ ucweb.com
 uczzd.com.cn
 uczzd.com
 360safe.cn
+
+--------
+例如：
+iptables -A OUTPUT -m string --string "youtube.com" --algo bm -j DROP
+# 添加屏蔽规则
+ 
+iptables -D OUTPUT -m string --string "youtube.com" --algo bm -j DROP
+# 删除屏蔽规则，上面添加的代码是什么样，那么删除的代码就是把 -A 改成 -D 
+
+-A
+# 添加iptables规则；
+-D
+# 删除iptables规则（把添加防火墙规则时代码中的 -A 改成 -D 即可删除添加的规则）；
+-m string
+# 指定模块；
+--string "youtube.com"
+# 指定要匹配的字符串(域名、关键词等)；
+--algo bm
+# 指定匹配字符串模式/算法（还有一种更复杂的算法：kmp）；
+-j DROP
+# 指匹配到数据包后处理方式，这里是丢弃数据包
+
+参考https://doub.io/wlzy-25/
+
+--------
+检查linux防火墙是否开启
+service  iptables status
+
+列出iptables规则
+iptables -L
+
+参考https://jingyan.baidu.com/article/8cdccae946963f315413cdef.html
